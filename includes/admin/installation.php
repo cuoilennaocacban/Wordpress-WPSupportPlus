@@ -1423,4 +1423,17 @@ if ( current_filter() != 'plugins_loaded' || $installed_version != WPSP_VERSION 
         }
 }
 
+// Dependency Mechanism - Hunter.Tran Nexcel
+if(current_filter() != 'plugins_loaded' || $installed_version != WPSP_VERSION) {
+        $sql = "CREATE TABLE {$wpdb->prefix}wpsp_dependency_fields (
+                `id` INT NOT NULL AUTO_INCREMENT,
+                `label` VARCHAR(200) NOT NULL,
+                `field_categories` VARCHAR(100) NULL,
+                `parent` INT NULL,
+                PRIMARY KEY (`id`),
+                UNIQUE INDEX `id_UNIQUE` (`id` ASC))
+                DEFAULT CHARACTER SET = utf8;";
+        dbDelta( $sql );
+}
+
 ?>
