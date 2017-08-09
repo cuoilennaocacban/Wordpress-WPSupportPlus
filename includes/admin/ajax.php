@@ -845,6 +845,27 @@ final class SupportPlusAjax {
         include( WCE_PLUGIN_DIR . 'includes/admin/setwpspSettingsBackup.php' );                
         die();
     }
+
+    // dependency field
+    function getDependencyField(){
+        include(WCE_PLUGIN_DIR.'/includes/admin/dependency_field/getDependencyField.php');
+        die();
+    }
+
+    function createDependencyField() {
+        include( WCE_PLUGIN_DIR . 'includes/admin/custom_field/createDependencyField.php' );
+        die();
+    }
+
+    function updateDependencyField() {
+        include( WCE_PLUGIN_DIR . 'includes/admin/custom_field/updateDependencyField.php' );
+        die();
+    }
+
+    function deleteDependencyField() {
+        include( WCE_PLUGIN_DIR . 'includes/admin/custom_field/deleteDependencyField.php' );
+        die();
+    }
 }
 
 ?>
