@@ -18,6 +18,9 @@ jQuery(document).ready(function(){
 	jQuery('#tab_custom_fields').click(function(){
 		getCustomFields();
 	});
+	jQuery("#tab_dependency_fields").click(function(){
+		getDependencyField();
+	});
 	jQuery('#tab_faq_category_container').click(function(){
 		getFaqCategorySettings();
 	});
