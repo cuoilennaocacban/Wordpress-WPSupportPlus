@@ -7,11 +7,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<li><a href="#settingsCategories" id="tab_category_container" data-toggle="tab"><?php _e('Categories','wp-support-plus-responsive-ticket-system');?></a></li>
 	<li><a href="#settingsMail" id="tab_mail_container" data-toggle="tab"><?php _e('Email Notification','wp-support-plus-responsive-ticket-system');?></a></li>
 	<li><a href="#settingsCustomFields" id="tab_custom_fields" data-toggle="tab"><?php _e('Custom Fields','wp-support-plus-responsive-ticket-system');?></a></li>
+	<li><a href="#settingsDependencyFields" id="tab_dependency_fields" data-toggle="tab"><?php _e('Dependency Fields','wp-support-plus-responsive-ticket-system');?></a></li>
 	<li><a href="#settingsCustomSliderMenu" id="tab_slider_menu_container" data-toggle="tab"><?php _e('Custom Slider Menus','wp-support-plus-responsive-ticket-system');?></a></li>
 	<li><a href="#settingsRoleManegementMenu" id="tab_role_manege_menu_container" data-toggle="tab"><?php _e('Role Management','wp-support-plus-responsive-ticket-system');?></a></li>
 	<li><a href="#settingsFaqCategory" id="tab_faq_category_container" data-toggle="tab"><?php _e('FAQ Categories','wp-support-plus-responsive-ticket-system');?></a></li>
 	<li><a href="#settingsCustomCSS" id="tab_custom_css_container" data-toggle="tab"><?php _e('Custom CSS','wp-support-plus-responsive-ticket-system');?></a></li>
-        <li><a href="#settingsAddOnLicenses" id="tab_addon_license_container" data-toggle="tab"><?php _e('Licenses','wp-support-plus-responsive-ticket-system');?></a></li>
+    <li><a href="#settingsAddOnLicenses" id="tab_addon_license_container" data-toggle="tab"><?php _e('Licenses','wp-support-plus-responsive-ticket-system');?></a></li>
 </ul>
 <!-- Tab panes -->
 <div class="tab-content">
@@ -45,8 +46,15 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		<div class="wait"><img alt="Please Wait" src="<?php echo WCE_PLUGIN_URL.'asset/images/ajax-loader@2x.gif?ver='.WPSP_VERSION;?>"></div>
 	</div>
 	<!-- Custom Fields Menu Tab Body End Here -->
+	<!-- Role Manegement Menu Tab Body Start Here -->
 	<div class="tab-pane" id="settingsCustomFields">
 		<div class="settingsCustomFieldsContainer"></div>
+		<div class="wait"><img alt="Please Wait" src="<?php echo WCE_PLUGIN_URL.'asset/images/ajax-loader@2x.gif?ver='.WPSP_VERSION;?>"></div>
+	</div>
+	<!-- Custom Fields Menu Tab Body End Here -->
+	<!-- Role Manegement Menu Tab Body Start Here -->
+	<div class="tab-pane" id="settingsDependencyFields">
+		<div class="settingsDependencyFieldsContainer"></div>
 		<div class="wait"><img alt="Please Wait" src="<?php echo WCE_PLUGIN_URL.'asset/images/ajax-loader@2x.gif?ver='.WPSP_VERSION;?>"></div>
 	</div>
 	<!-- Custom Fields Menu Tab Body End Here -->
