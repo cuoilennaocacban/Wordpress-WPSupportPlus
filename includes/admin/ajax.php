@@ -344,23 +344,26 @@ final class SupportPlusAjax {
     }
 
     //version 4.4
+
+    //custom field
+
     function getCustomFields() {
-        include( WCE_PLUGIN_DIR . 'includes/admin/getCustomFields.php' );
+        include( WCE_PLUGIN_DIR . 'includes/admin/custom_field/getCustomFields.php' );
         die();
     }
 
     function createNewCustomField() {
-        include( WCE_PLUGIN_DIR . 'includes/admin/createNewCustomField.php' );
+        include( WCE_PLUGIN_DIR . 'includes/admin/custom_field/createNewCustomField.php' );
         die();
     }
 
     function updateCustomField() {
-        include( WCE_PLUGIN_DIR . 'includes/admin/updateCustomField.php' );
+        include( WCE_PLUGIN_DIR . 'includes/admin/custom_field/updateCustomField.php' );
         die();
     }
 
     function deleteCustomField() {
-        include( WCE_PLUGIN_DIR . 'includes/admin/deleteCustomField.php' );
+        include( WCE_PLUGIN_DIR . 'includes/admin/custom_field/deleteCustomField.php' );
         die();
     }
 
